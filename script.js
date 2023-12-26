@@ -1,3 +1,4 @@
+
 fetch('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL,USD-BRLT,GBP-BRL,AUD-BRL,CNY-BRL')
   .then(response => response.json())
   .then(data => {
@@ -11,9 +12,10 @@ fetch('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL,USD-BRLT,
     const dolarT = cotacoes.USDBRLT.bid
     const libra = cotacoes.GBPBRL.bid
     const dolarA = cotacoes.AUDBRL.bid
-    const yuan = cotacoes.CNYBRL.bid
+    const yuan = cotacoes.CNYBRL
 
-    console.log(`dolar:${dolar}, euro:${euro}, bitcoin:${bitcoin}, dolar turismo:${dolarT}, libra:${libra}, dolar australiano:${dolarA}, Yuan Chinês:${yuan} `)
+    console.log(`dolar:${dolar}, euro:${euro}, bitcoin:${bitcoin}, dolar turismo:${dolarT}, libra:${libra}, dolar australiano:${dolarA}`)
+    console.log(yuan)
   })
   .catch(error => {
     console.error('Houve um erro:', error);
