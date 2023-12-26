@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+    font-family: sans-serif;
+    background: url(backgroundmp4.mp4);
+    
+}
+.selecionar_moeda {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    margin-top: 30px;
+    z-index: 10000;
+}
+.selecionar_moeda.active{
+    height: 360px;
+}
+.convertor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 400px; /* Defina a altura desejada */
+    overflow: hidden;
+}
+  
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.moedas{
+    display: flex;
+    font-size: 1.7rem;
+    align-items: center;
+    gap: 15px;
+}
+.valor{
+    background-color: rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(55px);
+    width: 500px;
+    height: 190px;
+    padding: 30px;
+    border-radius: 40px;
+}
+.moedas img {
+    width: 30px;
+    height: 30px;
+}
+.valor_moeda_prin{
+    font-size: 1.7rem;
+}
+.moeda_secundaria{
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    font-size: 2rem;
+}
+.info_ad_moeda{
+    margin-top: 30px;
+}
+.moeda_queda_aumento{
+    display: flex;
+    font-size: 2rem;
+    font-weight: 700;
+    gap: 10px;
+    color: rgb(255, 35, 35);
+}
+.valor_numerico{
+    color: rgb(253, 33, 33);
+    font-weight: 700;
+    font-size: 2rem;
+}
+.var_diario{
+    font-size: 1.3rem;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.var_diario_max, .var_diario_, .var_diario_min{
+    font-weight: 700;
+}
+.fechamento_anterior{
+    font-size: 1.3rem;
+    display: flex;
+}
+.fechamento_val{
+    font-weight: 600;
+    margin-left: 10px;
+}
+.primeira_moeda,.segunda_moeda{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(55px);
+    border-radius: 20px;
+    padding-left: 10px;
+}
+.primeira_moeda.active, .segunda_moeda.active{
+    border-radius: 20px 20px 0 0;
+}
+.select_primeira_moeda input, .select_segunda_moeda input{
+    border-style: none;
+    background-color: transparent;
+    height: 60px;
+}
+.tipos_primeira_moeda,.tipos_segunda_moeda{
+    display: none;
+    transform: translateY(-100%);
+    transition:  opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.tipos_primeira_moeda.active,.tipos_segunda_moeda.active{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(65px);
+    width: 210px;
+    height: 270px;
+    border-radius: 0px 0px 20px 20px;
+    transform: translateY(0);
+}
+.tipos_moedas{
+    padding: 5px 0 5px 0;
+}
+.moeda_prim,.moeda_secun{
+    height: 100px;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <video autoplay muted loop class="video-background">
+        <source src="backgroundmp4.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos em HTML5.
+    </video>
+    <div class="selecionar_moeda">
+        <div class="moeda_prim">
+            <div class="primeira_moeda" id="prim_moeda">
+                <p>De:</p>
+                <div class="select_primeira_moeda">
+                    <input type="text" id="input_primeira_moeda">
+                </div>
+            </div>
+            <div class="tipos_primeira_moeda">
+                <div class="tipos_moedas"><h2 id="usa_1">USD</h2></div>
+                <div class="tipos_moedas" id="brl_1"><h2>BRL</h2></div>
+                <div class="tipos_moedas" id="eur_1"><h2>EUR</h2></div>
+                <div class="tipos_moedas" id="gbp_1"><h2>GBP</h2></div>
+                <div class="tipos_moedas" id="aud_1"><h2>AUD</h2></div>
+                <div class="tipos_moedas" id="cny_1"><h2>CNY</h2></div>
+                <div class="tipos_moedas" id="btc_1"><h2>BTC</h2></div>
+            </div>
+        </div>
+        <div class="moeda_secun">
+            <div class="segunda_moeda" id="seg_moeda">
+                <p>Para:</p> 
+                <div class="select_segunda_moeda">
+                    <input type="text" id="input_segunda_moeda">
+                </div>
+            </div>
+            <div class="tipos_segunda_moeda">
+                <div class="tipos_moedas" id="usa_2"><h2>USD</h2></div>
+                <div class="tipos_moedas" id="brl_2"><h2>BRL</h2></div>
+                <div class="tipos_moedas" id="eur_2"><h2>EUR</h2></div>
+                <div class="tipos_moedas" id="gbp_2"><h2>GBP</h2></div>
+                <div class="tipos_moedas" id="aud_2"><h2>AUD</h2></div>
+                <div class="tipos_moedas" id="cny_2"><h2>CNY</h2></div>
+                <div class="tipos_moedas" id="btc_2"><h2>BTC</h2></div>
+            </div>
+        </div>
+    </div>
+    <div class="convertor">
+        <div class="valor">
+            <div class="moedas">
+                <p class="titulo">
+                    Dolar Americano 
+                </p>
+                <img src="two-arrows.png" alt="">
+                <p class="titulo_2">
+                    Real Brasileiro
+                </p>
+            </div>
+            <div class="moeda_secundaria">
+                <div  class="valor_moeda_secu">
+                    <p>
+                        <b>4.8745</b> 
+                    </p>
+                </div>
+                <div class="moeda_queda_aumento">
+                    <p class="valor_moeda"></p>
+                    <p class="valor_numerico">-0,00099</p>
+                    <p class="valor_porc">-0.20%</p>
+                </div>
+            </div>
+            <div class="info_ad_moeda">
+                <div class="fechamento_anterior">
+                    <p class="fechamento_text">Fechamento Anterior:</p>
+                    <p class="fechamento_val"> 4.8844</p>
+                </div>
+                <div class="var_diario">
+                    <p>Var. Diaria:</p>
+                    <p class="var_diario_max">4.8668</p>
+                    <p class="var_diario_-">-</p>
+                    <p class="var_diario_min">4.8908</p>
+                </div>
+            </div>
+        </div>
+        <div class="conv_primeiro_passo">
+            <div class="display">
+
+            </div>
+            <div class="escolha">
+
+            </div>
+        </div>
+        <div class="conv_primeiro_passo">
+            <div class="display">
+
+            </div>
+            <div class="escolha">
+
+            </div>
+        </div>
+    </div>
+    <script src="moedas_1.js"></script>
+    <script src="addInput.js"></script>
+</body>
+</html>
